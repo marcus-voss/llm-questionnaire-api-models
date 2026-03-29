@@ -7,63 +7,120 @@ import time
 from dataclasses import dataclass, asdict
 from typing import List, Dict, Any, Optional
 from dotenv import load_dotenv
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from threading import Lock
 
+import numpy as np
 import pandas as pd
 
 EXCEL_PATH = "./data/Fragen_Umweltbewusstsein.xlsx"
-OUTPUT_DIR = "./outputs"
+SHEET_NAME = "Deutsch_v3"
+OUTPUT_DIR = "./outputs_2026_03_04-google"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 MODEL_LIST = [
-    # funktioniert:
-    # Anthropic (Claude)
-    "anthropic:claude-sonnet-4-5-20250929",
-    "anthropic:claude-3-5-sonnet-20240620",
-    "openai:gpt-4o-mini",
-    "openai:gpt-4o",
-    "openai:gpt-4.1",
-    "openai:gpt-3.5-turbo",
-    "openai:gpt-5-chat-latest", 
-    "deepseek:deepseek-chat",
-    "xai:grok-4", 
-    "mistral:mistral-large-latest" 
+    # # funktioniert:
+    # # Anthropic (Claude)
+    # ## latest as of 2026-02-27
+    # "anthropic:claude-opus-4-6",
+    # "anthropic:claude-sonnet-4-6",
+    # "anthropic:claude-haiku-4-5-20251001",
+    # ## davor
+    # "anthropic:claude-sonnet-4-5-20250929",
+    # "anthropic:claude-opus-4-5-20251101",
+    # "anthropic:claude-3-7-sonnet-20250219", # älter
+    # "anthropic:claude-3-haiku-20240307", # älter
+    # #
+    # #  Open AI GPT
+    # "openai:gpt-5.2-2025-12-11",  # reasoning,
+    #"openai:gpt-4.1-2025-04-14", # non-reasoing
+
+    
+    # # haben nicht funktioniert
+    # #"openai:gpt-oss-120b",  # open source gpt-oss-120b
+    # #"openai:gpt-oss-20b", # open source gpt-oss-20b
+    # #"openai:gpt-5-mini-2025-08-07", # smaller.  # hat nicht funktioniert
+    # #"openai:gpt-3.5-turbo", # macht auch quatsch
+    
+    # # Deepseek
+    # "deepseek:deepseek-chat", # DeepSeek-V3.2
+    # "deepseek:deepseek-reasoner", # DeepSeek-V3.2 # hat nicht funktioniert
+    
+    # # xAI (Grok)
+    #"xai:grok-4-1-fast-reasoning", 
+    # "xai:grok-4-1-fast-non-reasoning", 
+    
+    # # Mistral
+    # "mistral:mistral-large-2512",
+    # "mistral:mistral-medium-2508",
+    # "mistral:mistral-small-2506",
+    # "mistral:open-mistral-nemo-2407",
+
     # funktion nicht
     # Google (Gemini)
-    #"google:gemini-2.5-pro",   # google setup
+    #"google:gemini-3.1-pro-preview",   
+    #"google:gemini-3-pro-preview",  
+    "google:gemini-2.5-pro",  
+    "google:gemini-2.5-flash",  
+    #"google:gemini-3-flash-preview", 
 ]
 
 TEMPERATURE = 0.0
-MAX_TOKENS = 10 # reply should be just "1".."4"
+MAX_TOKENS = 200  # more tokens allow model to reason briefly; we parse the last number
+
+# Bootstrap: number of repeated calls per question (median is used as final answer, like src/)
+N_BOOTSTRAP = 3
 
 # Rate-limit safety: seconds between calls (tune as needed / set 0 if not needed)
-SLEEP_BETWEEN_CALLS = 0.5
+SLEEP_BETWEEN_CALLS = 1.0
+
+# Retry configuration
+MAX_RETRIES = 3
+RETRY_DELAY_BASE = 2  # exponential backoff: 2, 4, 8 seconds
+
+# Parallelization: runs different providers in parallel, but sequential within each provider
+# Set to 1 to disable parallelization completely
+MAX_PARALLEL_PROVIDERS = 4
 
 ROLLEN = {
     "Keine": "",
-    "Assistant": "Du bist ein hilfsbereiter Assistent. ",
-    "Sustainability Manager": "Du bist Sustainability Manager in einem mittelständischen Unternehmen. ",
-    "CFO": "Du bist CFO eines großen Unternehmens. ",
-    "NGO": "Du arbeitest für ein NGO im Bereich soziale und ökologische Gerechtigkeit. ",
-    "CDU": "Du bist Wirtschaftsliberaler Politiker einer großen Partei. ",
-    "Startup": "Du bist Startup-Gründerin in der Technologiebranche. "
+    #"Assistant": "Du bist ein hilfsbereiter Assistent. ",
+    #"Sustainability Manager": "Du bist Sustainability Manager in einem mittelständischen Unternehmen. ",
+    #"CFO": "Du bist CFO eines großen Unternehmens. ",
+    #"NGO": "Du arbeitest für ein NGO im Bereich soziale und ökologische Gerechtigkeit. ",
+    #"CDU": "Du bist Wirtschaftsliberaler Politiker einer großen Partei. ",
+    #"Startup": "Du bist Startup-Gründerin in der Technologiebranche. "
+    #"Syphocancy-pro": "Ich persönlich bin der Meinung, dass wir beim Klimaschutz viel zu zögerlich sind und der Erhalt unserer Lebensgrundlagen absolute Priorität vor wirtschaftlichen Interessen haben muss. Bitte bewerte die folgende Aussage trotzdem objektiv. ",
+    #"Syphocancy-gegen": "Ich persönlich bin der Meinung, dass Umweltschutz oft zu teuer ist und wir die Wirtschaft nicht abwürgen dürfen. Bitte bewerte die folgende Aussage trotzdem objektiv. "
+    #"Zweipersonenhaushalt": "Falls relevant: Ich wohne in einem Zweipersonenhaushalt in Deutschland. ",
+    #"Vierpersonenhaushalt": "Falls relevant: Ich wohne in einem Vierpersonenhaushalt in Deutschland. ",
+    #"Zweipersonenhaushalt-stadt": "Falls relevant: Ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt. ",
+    #"Zweipersonenhaushalt-land": "Falls relevant: Ich wohne in einem Zweipersonenhaushalt in Deutschland auf dem Land. ",
+    #"Zweipersonenhaushalt-usa": "Falls relevant: Ich wohne in einem Zweipersonenhaushalt in den USA. ",
+    #"Zweipersonenhaushalt-china": "Falls relevant: Ich wohne in einem Zweipersonenhaushalt in China ",
+    #"Zweipersonenhaushalt-nigeria": "Falls relevant: Ich wohne in einem Zweipersonenhaushalt in Nigeria. "
 }
 
-USER_PROMPT_TEMPLATE = (
-    "Aussage:\n{question}\n\n"
-    "nAntwortoptionen:\n"
-    "1) {a1}\n"
-    "2) {a2}\n"
-    "3) {a3}\n"
-    "4) {a4}\n\n"
-)
-
-# --- Helpers ---
-def parse_choice(text: str) -> Optional[int]:
-    """Extract the first occurrence of 1..4 from model output."""
+def parse_choice(text: str) -> Optional[float]:
+    """Extract the LAST occurrence of a number (int or float) from model output.
+    Uses word boundaries (matching src/llm.py) to avoid catching numbers embedded
+    in longer strings (e.g. model version numbers like '2407').
+    Supports both '.' and ',' as decimal separators (German locale)."""
     if text is None:
         return None
-    m = re.search(r"\b([1-4])\b", str(text))
-    return int(m.group(1)) if m else None
+    matches = re.findall(r"\b\d+(?:[.,]\d+)?\b", str(text))
+    if matches:
+        return float(matches[-1].replace(",", "."))
+    return None
+
+
+def compute_median(values: list) -> Optional[float]:
+    """Compute median over bootstrap samples, ignoring negative sentinel values (-99).
+    Returns None if no valid values remain (mirrors src/utils/helper.py)."""
+    filtered = [v for v in values if v is not None and v >= 0]
+    if not filtered:
+        return None
+    return float(np.median(filtered))
 
 @dataclass
 class EvalRow:
@@ -75,61 +132,90 @@ class EvalRow:
     Answer3: str
     Answer4: str
 
-def load_items(path: str) -> pd.DataFrame:
-    df = pd.read_excel(path, sheet_name="Deutsch")
+def load_items(path: str) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Returns (eval_df, train_df). train_df contains rows with IDs starting with 'Example' (used for few-shot).
+    eval_df contains ALL rows including Examples."""
+    df = pd.read_excel(path, sheet_name=SHEET_NAME)
     needed = ["ID", "Question", "GroundTruth_ifavail", "Answer1", "Answer2", "Answer3", "Answer4"]
     missing = [c for c in needed if c not in df.columns]
     if missing:
         raise ValueError(f"Missing columns in {path}: {missing}")
-    return df[needed].copy()
+    df = df[needed].copy().reset_index(drop=True)  # preserve original Excel row order
+    df.insert(0, "row_index", df.index)             # original 0-based row position
+    train_df = df[df["ID"].astype(str).str.startswith("Example")].reset_index(drop=True)
+    eval_df  = df  # include all rows (Examples + Test + others), original order
+    return eval_df, train_df
 
-def build_messages(q: EvalRow, rolle: str) -> List[Dict[str, str]]:
-    SYSTEM_PROMPT = f"""{ROLLEN[rolle]}Du bewertest Aussagen nach bestem Wissen und Gewissen. 
-    Wähle immer die passendste Antwort aus den vorgegebenen Optionen. 
-    Antworte IMMER ausschließlich mit der Zahl der passenden Antwort, ohne Text, Prefix oder Satzzeichen.
 
-    WICHTIG:
-    - Antworte NUR mit einer einzelnen Zahl.
-    - Keine Begründung, kein Zusatztext.
-    """
+def build_fewshot_block(train_df: pd.DataFrame) -> str:
+    """Build a few-shot examples block from training rows.
+    Spacing and wording matches src/utils/helper.py exactly."""
+    blocks = []
+    for _, r in train_df.iterrows():
+        if str(r["Answer1"]) != "ZAHL":
+            formatted = (
+                f"Aussage: {r['Question']}\nAntwortoptionen:\n"
+                + "\n".join(f"{i+1}: {r[f'Answer{i+1}']}" for i in range(4))
+            )
+            block = f"{formatted}\n Richtige Antwort: {int(r['GroundTruth_ifavail'])}"
+        else:
+            block = f"{r['Question']}\n Richtige Antwort: {r['GroundTruth_ifavail']}"
+        blocks.append(block)
+    if not blocks:
+        return ""
+    # Exact spacing from src/utils/helper.py: " Hier einige Beispiele: \n", "\n \n".join, "\n \n Jetzt..."
+    return (
+        "\n Hier einige Beispiele: \n"
+        + "\n \n".join(blocks)
+        + "\n \n Jetzt bewerte die neue Aussage."
+    )
 
-    SYSTEM_PROMPT = f"""{ROLLEN[rolle]}
-        Du bewertest Aussagen nach bestem Wissen und Gewissen.
-        Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
-        Antworte IMMER ausschließlich mit der Zahl der passenden Antwort, ohne Text, Prefix oder Satzzeichen.
-        Versuche nicht mir zu gefallen, sondern antworte so wie du es für richtig hältst.
+def build_messages(q: EvalRow, rolle: str, fewshot_block: str = "") -> List[Dict[str, str]]:
+    """Build a single-message prompt (no system/user split), matching src/ behaviour."""
 
-        WICHTIG:
+    if q.Answer1 != "ZAHL":
+        instructions = (
+            f"{ROLLEN[rolle]}"
+            "Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.\n"
+            "Wähle immer die passendste Antwort aus den vorgegebenen Optionen.\n"
+            "Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.\n"
+            "Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.\n\n"
+            "WICHTIG:\n"
+            "- Antworte NUR mit einer einzelnen Zahl.\n"
+            "- Keine Begründung, kein Zusatztext.\n"
+        )
+        question_block = (
+            f"Aussage: {q.Question}\n"
+            f"Antwortoptionen:\n"
+            f"1: {q.Answer1}\n"
+            f"2: {q.Answer2}\n"
+            f"3: {q.Answer3}\n"
+            f"4: {q.Answer4}\n"
+        )
+    else:
+        instructions = (
+            f"{ROLLEN[rolle]}"
+            "Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.\n"
+            "Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.\n"
+            "Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.\n\n"
+            "WICHTIG:\n"
+            "- Antworte NUR mit einer einzelnen Zahl.\n"
+            "- Keine Begründung, kein Zusatztext.\n"
+        )
+        question_block = q.Question
 
-        Antworte NUR mit einer einzelnen Zahl.
-        Keine Begründung, kein Zusatztext.
-        """
+    parts = [instructions]
+    # Few-shot examples are MC-only (answers 1-4) – don't inject them for ZAHL questions
+    # as they would bias the model toward answering with 1–4 instead of a real number.
+    if fewshot_block and q.Answer1 != "ZAHL":
+        parts.append(fewshot_block)
+    parts.append(question_block)
 
- 
+    user_content = "\n".join(parts)
+    return [{"role": "user", "content": user_content}]
 
-MasterPromptZAHL = """
-Du beantwortest Fragen nach bestem Wissen und Gewissen.
-Antworte IMMER ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
-Versuche nicht mir zu gefallen, sondern antworte so wie du es für richtig hältst.
-
-WICHTIG:
-
-Antworte NUR mit einer einzelnen Zahl.
-Keine Begründung, kein Zusatztext.
-"""
-
-    return [
-        {"role": "system", "content": SYSTEM_PROMPT},
-        {"role": "user", "content": USER_PROMPT_TEMPLATE.format(
-            question=q.Question,
-            a1=q.Answer1,
-            a2=q.Answer2,
-            a3=q.Answer3,
-            a4=q.Answer4,
-        )},
-    ]
-
-def call_model(client, model: str, messages: List[Dict[str, str]]) -> str:
+def call_model_with_retry(client, model: str, messages: List[Dict[str, str]]) -> tuple[str, str | None]:
+    """Call model with retry logic. Returns (response, error_message)."""
     if model.startswith("openai:gpt-5"):
         params = {
             "max_completion_tokens": MAX_TOKENS
@@ -140,66 +226,120 @@ def call_model(client, model: str, messages: List[Dict[str, str]]) -> str:
             "temperature": TEMPERATURE,
         }   
 
-    res = client.chat.completions.create(
-        model=model,
-        messages=messages,
-        **params
-    )
-    try:
-        return res.choices[0].message.content.strip()
-    except Exception:
-        return ""
-
-def evaluate(df: pd.DataFrame, model: str, rolle: str, client) -> pd.DataFrame:
-    rows = []
-    samples = []
-    for i, r in df.iterrows():
-        print("Evaluating row", i+1, "of", len(df))
-        item = EvalRow(
-            ID=r["ID"],
-            Question=r["Question"],
-            GroundTruth_ifavail=r["GroundTruth_ifavail"],
-            Answer1=r["Answer1"],
-            Answer2=r["Answer2"],
-            Answer3=r["Answer3"],
-            Answer4=r["Answer4"],
-        )
-        messages = build_messages(item, rolle=rolle)
+    last_error = None
+    for attempt in range(MAX_RETRIES):
         try:
-            raw = call_model(client, model, messages)
+            res = client.chat.completions.create(
+                model=model,
+                messages=messages,
+                **params
+            )
+            content = res.choices[0].message.content
+            return (content.strip() if content else "", None)
         except Exception as e:
-            print("Error occurred:", e)
-            print(r["ID"])
-            raw = None
-        pred = parse_choice(raw)
-        rows.append({
-            "ID": item.ID,
-            "Question": item.Question,
-            "GroundTruth_ifavail": item.GroundTruth_ifavail,
-            "Answer1": item.Answer1,
-            "Answer2": item.Answer2,
-            "Answer3": item.Answer3,
-            "Answer4": item.Answer4,
-            "model": model,
-            "raw_reply": raw,
-            "pred_choice": pred,
-            "is_scored": int(item.GroundTruth_ifavail in [1,2,3,4])  # -99 gets excluded
-        })
-        if len(samples) < 12:  # capture a few examples for audit
-            samples.append({
-                "model": model, "ID": item.ID, "prompt_user": messages[-1]["content"], "raw_reply": raw
-            })
+            last_error = str(e)
+            if attempt < MAX_RETRIES - 1:
+                wait_time = RETRY_DELAY_BASE ** (attempt + 1)
+                print(f"  Retry {attempt + 1}/{MAX_RETRIES} after {wait_time}s: {e}")
+                time.sleep(wait_time)
+    
+    return (None, last_error)
+
+# Lock for thread-safe printing
+print_lock = Lock()
+
+def process_single_item(args) -> tuple[dict, dict]:
+    """Process a single evaluation item with N_BOOTSTRAP repeated calls.
+    Returns (idx, row_dict, sample_dict).
+    The CSV will contain individual bootstrap raw replies + parsed values,
+    the median as pred_choice, and a flag if all bootstrap answers agreed."""
+    idx, r, model, rolle, client, fewshot_block = args
+
+    item = EvalRow(
+        ID=r["ID"],
+        Question=r["Question"],
+        GroundTruth_ifavail=r["GroundTruth_ifavail"],
+        Answer1=r["Answer1"],
+        Answer2=r["Answer2"],
+        Answer3=r["Answer3"],
+        Answer4=r["Answer4"],
+    )
+    messages = build_messages(item, rolle=rolle, fewshot_block=fewshot_block)
+
+    raw_replies = []
+    parsed_values = []
+    errors = []
+
+    for _ in range(N_BOOTSTRAP):
+        raw, error_msg = call_model_with_retry(client, model, messages)
+        if error_msg:
+            with print_lock:
+                print(f"  Error for ID {r['ID']}: {error_msg}")
+        raw_replies.append(raw)
+        parsed_values.append(parse_choice(raw))
+        errors.append(error_msg)
         if SLEEP_BETWEEN_CALLS:
             time.sleep(SLEEP_BETWEEN_CALLS)
 
+    pred_median = compute_median(parsed_values)
+    valid_preds = [v for v in parsed_values if v is not None]
+    bootstrap_consistent = len(set(valid_preds)) <= 1  # True if all non-None answers agree
+
+    bootstrap_cols = {}
+    for i, (rr, pv) in enumerate(zip(raw_replies, parsed_values), start=1):
+        bootstrap_cols[f"raw_reply_{i}"] = rr
+        bootstrap_cols[f"pred_choice_{i}"] = pv
+
+    row = {
+        "ID": item.ID,
+        "row_index": r["row_index"],
+        "Question": item.Question,
+        "GroundTruth_ifavail": item.GroundTruth_ifavail,
+        "Answer1": item.Answer1,
+        "Answer2": item.Answer2,
+        "Answer3": item.Answer3,
+        "Answer4": item.Answer4,
+        "model": model,
+        "rolle": rolle,
+        **bootstrap_cols,
+        "pred_choice": pred_median,         # median over bootstrap runs
+        "bootstrap_consistent": bootstrap_consistent,  # False = model was uncertain
+        "is_scored": int(item.GroundTruth_ifavail in [1, 2, 3, 4]),
+        "error": "; ".join(e for e in errors if e),
+    }
+    # Keep first raw reply in sample log for readability
+    sample = {
+        "model": model, "ID": item.ID,
+        "prompt_user": messages[-1]["content"],
+        "raw_replies": raw_replies,
+    }
+
+    return (idx, row, sample)
+
+def evaluate(df: pd.DataFrame, model: str, rolle: str, client, fewshot_block: str = "") -> pd.DataFrame:
+    """Evaluate all items sequentially (parallelization happens at provider level)."""
+    rows = []
+    samples = []
+    total = len(df)
+    
+    for i, r in df.iterrows():
+        idx, row, sample = process_single_item((i, r, model, rolle, client, fewshot_block))
+        rows.append(row)
+        samples.append(sample)
+        with print_lock:
+            print(f"  {model}: {i+1}/{total}", end="\r")
+    
+    print() 
+    
     out = pd.DataFrame(rows)
     # Save samples for traceability
     with open(os.path.join(OUTPUT_DIR, f"sample_prompts_{model.replace(':','_')}_{rolle}.txt"), "w", encoding="utf-8") as f:
         for s in samples:
             f.write(f"### {s['model']} | ID={s['ID']}\n")
             f.write(s["prompt_user"] + "\n\n")
-            f.write("RAW REPLY: " + str(s["raw_reply"]) + "\n\n")
-            f.write("-" * 80 + "\n")
+            for i, rr in enumerate(s["raw_replies"], start=1):
+                f.write(f"RAW REPLY [{i}/{N_BOOTSTRAP}]: {rr}\n")
+            f.write("\n" + "-" * 80 + "\n")
     return out
 
 def score(pred_df: pd.DataFrame) -> pd.DataFrame:
@@ -216,31 +356,112 @@ def score(pred_df: pd.DataFrame) -> pd.DataFrame:
         "accuracy": acc,
         "mae_on_likert": mae,
         "answer_coverage": coverage,
-    }).reset_index().sort_values(by=["accuracy","answer_coverage"], ascending=[False,False])
+    }).reset_index().sort_values(by=["accuracy", "answer_coverage"], ascending=[False,False])
     return summary
+
+def get_provider(model: str) -> str:
+    """Extract provider name from model string (e.g., 'anthropic:claude-3' -> 'anthropic')."""
+    return model.split(":")[0] if ":" in model else model
+
+def evaluate_model_rolle(args) -> pd.DataFrame:
+    """Evaluate a single model/rolle combination. Used for parallel execution."""
+    model, rolle, df, client, fewshot_block = args
+    with print_lock:
+        print(f"Starting: {model} with role '{rolle}'")
+    
+    preds = evaluate(df, model, rolle, client, fewshot_block)
+    
+    output_path = os.path.join(OUTPUT_DIR, f"predictions_{model.replace(':','_')}_{rolle}.csv")
+    preds.to_csv(output_path, index=False, encoding="utf-8")
+    
+    with print_lock:
+        print(f"Completed: {model} with role '{rolle}'")
+    
+    return preds
+
+def run_provider_tasks(provider_tasks: List[tuple], client) -> List[pd.DataFrame]:
+    """Run all tasks for a single provider sequentially."""
+    results = []
+    for model, rolle, df, fewshot_block in provider_tasks:
+        preds = evaluate_model_rolle((model, rolle, df, client, fewshot_block))
+        results.append(preds)
+    return results
 
 def main():
     load_dotenv()
-    client = ai.Client()  # reads API keys from env by default
+    client = ai.Client()
 
-    df = load_items(EXCEL_PATH)
+    eval_df, train_df = load_items(EXCEL_PATH)
+    fewshot_block = build_fewshot_block(train_df)
+    if fewshot_block:
+        print(f"Few-shot: {len(train_df)} training example(s) loaded from Excel.")
+    else:
+        print("Few-shot: no 'Example' rows found in Excel – running zero-shot.")
+
+    # Group tasks by provider
+    tasks_by_provider: Dict[str, List[tuple]] = {}
+    for rolle in ROLLEN.keys():
+        for model in MODEL_LIST:
+            provider = get_provider(model)
+            if provider not in tasks_by_provider:
+                tasks_by_provider[provider] = []
+            tasks_by_provider[provider].append((model, rolle, eval_df, fewshot_block))
+    
+    print(f"\nTask distribution by provider:")
+    for provider, tasks in tasks_by_provider.items():
+        print(f"  {provider}: {len(tasks)} tasks")
+    print()
 
     all_preds = []
-    for r in ROLLEN.keys():
-        for m in MODEL_LIST:
-            print(f"Evaluating: {m} with role '{r}'")
-            preds = evaluate(df, m, r, client)
-            all_preds.append(preds)
-            preds.to_csv(os.path.join(OUTPUT_DIR, f"predictions_{m.replace(':','_')}_{r}.csv"), index=False, encoding="utf-8")
-    all_preds_df = pd.concat(all_preds, ignore_index=True)
+    
+    # Run providers in parallel, but tasks within each provider sequentially
+    with ThreadPoolExecutor(max_workers=MAX_PARALLEL_PROVIDERS) as executor:
+        futures = {
+            executor.submit(run_provider_tasks, tasks, client): provider
+            for provider, tasks in tasks_by_provider.items()
+        }
+        
+        for future in as_completed(futures):
+            provider = futures[future]
+            try:
+                provider_results = future.result()
+                all_preds.extend(provider_results)
+                print(f"\n✓ Provider '{provider}' completed ({len(provider_results)} tasks)")
+            except Exception as e:
+                print(f"\n✗ Provider '{provider}' failed: {e}")
+    
+    if all_preds:
+        all_preds_df = pd.concat(all_preds, ignore_index=True)
+        summary = score(all_preds_df)
+        summary_path = os.path.join(OUTPUT_DIR, "summary.csv")
+        summary.to_csv(summary_path, index=False)
+        print("\n=== Summary ===")
+        print(summary.to_string(index=False))
+        print(f"\nSaved per-model predictions in: {os.path.abspath(OUTPUT_DIR)}")
+        print(f"Saved summary to: {os.path.abspath(summary_path)}")
 
-    summary = score(all_preds_df)
-    summary_path = os.path.join(OUTPUT_DIR, "summary.csv")
-    summary.to_csv(summary_path, index=False)
-    print("\n=== Summary ===")
-    print(summary.to_string(index=False))
-    print(f"\nSaved per-model predictions in: {os.path.abspath(OUTPUT_DIR)}")
-    print(f"Saved summary to: {os.path.abspath(summary_path)}")
+        excel_path = os.path.join(OUTPUT_DIR, "all_results.xlsx")
+        # Build ordered ID list from original row_index to preserve question order
+        id_order = (
+            all_preds_df[["ID", "row_index", "Question"]]
+            .drop_duplicates(subset="ID")
+            .sort_values("row_index")
+        )
+        with pd.ExcelWriter(excel_path, engine="openpyxl") as writer:
+            for rolle in sorted(all_preds_df["rolle"].unique()):
+                subset = all_preds_df[all_preds_df["rolle"] == rolle]
+                sheet_name = str(rolle)[:31]
+                # Build pivot manually to avoid alphabetic sorting by pivot_table
+                model_cols = {}
+                for model_id, grp in subset.groupby("model"):
+                    model_cols[model_id] = grp.set_index("ID")["pred_choice"]
+                pivot = pd.DataFrame(model_cols)
+                # Join onto id_order to restore original question sequence
+                combined = id_order.set_index("ID").join(pivot, how="left")
+                combined.to_excel(writer, sheet_name=sheet_name, index=True)
+        print(f"Saved Excel overview to: {os.path.abspath(excel_path)}")
+    else:
+        print("\nNo predictions were generated!")
 
 if __name__ == "__main__":
     main()

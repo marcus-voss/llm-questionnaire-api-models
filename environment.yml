@@ -1,0 +1,13 @@
+name: green-llm-eval
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pandas
+  - openpyxl
+  - setuptools
+  - wheel
+  - pip:
+      - "aisuite[all]"
+      - python-dotenv
