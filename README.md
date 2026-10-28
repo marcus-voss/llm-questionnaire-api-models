@@ -1,12 +1,12 @@
-# LLM Comparison on Multiple-Choice Questions (Proprietary Models)
+# LLM Questionnaire Benchmarking — API Models
 
-Query **proprietary / API-based LLMs** (OpenAI, Anthropic, DeepSeek, xAI, Mistral,
+Query **LLMs via hosted provider APIs** (OpenAI, Anthropic, DeepSeek, xAI, Mistral,
 and optionally Google) on a questionnaire of German environmental-awareness
 multiple-choice and numeric questions, under different **role / perspective
 prompts**, and export the answers to a tidy Excel workbook.
 
-This repository is the API-model counterpart to the companion open-source-model
-framework and reproduces the proprietary-model results reported in the paper:
+This repository is the API-model counterpart to the companion self-hosted-model
+framework and reproduces the hosted-API model results reported in the paper:
 
 - **Paper:** <https://arxiv.org/pdf/2606.02741>
 - **Open-source-model benchmarking framework** (self-hosted models via vLLM):
@@ -14,9 +14,10 @@ framework and reproduces the proprietary-model results reported in the paper:
 - **Published dataset** (human + LLM answers across roles, CC-BY-4.0):
   bundled under [`data/zenodo_data/`](data/zenodo_data/)
 
-The two code repositories are complementary: this one runs the closed, API-only
-models; the framework above runs open-weight models locally. Both write results
-in the **same per-role Excel layout**, so the workbooks can simply be combined.
+The two code repositories are complementary: this one queries models through
+hosted provider APIs; the framework above runs open-weight models locally. Both
+write results in the **same per-role Excel layout**, so the workbooks can simply
+be combined.
 
 ## Built on aisuite
 
