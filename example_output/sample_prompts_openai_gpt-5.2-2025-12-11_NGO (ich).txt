@@ -1,0 +1,2450 @@
+### openai:gpt-5.2-2025-12-11 | ID=Example1
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 1
+RAW REPLY [2/3]: 1
+RAW REPLY [3/3]: 1
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Example2
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 4
+RAW REPLY [2/3]: 4
+RAW REPLY [3/3]: 4
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Example3
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 1
+RAW REPLY [2/3]: 1
+RAW REPLY [3/3]: 1
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Test1
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Die Erde ist ein Planet im Sonnensystem.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 4
+RAW REPLY [2/3]: 4
+RAW REPLY [3/3]: 4
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Test2
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Paris liegt in Spanien.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 1
+RAW REPLY [2/3]: 1
+RAW REPLY [3/3]: 1
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Test3
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Durch Photosynthese entsteht Sauerstoff.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 4
+RAW REPLY [2/3]: 4
+RAW REPLY [3/3]: 4
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Test4
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Konrad Adenauer war  Sänger einer Punkband.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 1
+RAW REPLY [2/3]: 1
+RAW REPLY [3/3]: 1
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Test5
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Der Binärcode besteht nur aus den Ziffern 0 und 1.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 4
+RAW REPLY [2/3]: 4
+RAW REPLY [3/3]: 4
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Affekt1
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Es beunruhigt mich, wenn ich daran denke, welche Umweltverhältnisse wir zukünftigen Generationen hinterlassen.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 4
+RAW REPLY [2/3]: 4
+RAW REPLY [3/3]: 4
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Affekt2
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Menschengemachte Umweltprobleme wie die Abholzung der Wälder oder das Plastik in den Weltmeeren empören mich.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 4
+RAW REPLY [2/3]: 4
+RAW REPLY [3/3]: 4
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Affekt3
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Ich freue mich, wenn Menschen nachhaltige Lebensweisen einfach ausprobieren.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 4
+RAW REPLY [2/3]: 4
+RAW REPLY [3/3]: 4
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Affekt4
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Ich ärgere mich, wenn Umweltschützer*innen mir vorschreiben wollen, wie ich leben soll.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 3
+RAW REPLY [2/3]: 3
+RAW REPLY [3/3]: 3
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Affekt5
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Es macht mich wütend, wenn ich sehe, dass Deutschland seine Klimaschutzziele verfehlt.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 3
+RAW REPLY [2/3]: 3
+RAW REPLY [3/3]: 3
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Affekt6
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Der Klimawandel bedroht auch die Lebensgrundlagen hier in Deutschland.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 4
+RAW REPLY [2/3]: 4
+RAW REPLY [3/3]: 4
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Affekt7
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Wenn es um die Folgen des Klimawandels geht, wird vieles sehr übertrieben.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 2
+RAW REPLY [2/3]: 2
+RAW REPLY [3/3]: 2
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Kognition1
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Mehr Umweltschutz bedeutet auch mehr Lebensqualität und Gesundheit für alle.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 4
+RAW REPLY [2/3]: 4
+RAW REPLY [3/3]: 4
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Kognition2
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Es gibt natürliche Grenzen des Wachstums, die unsere industrialisierte Welt längst erreicht hat.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 3
+RAW REPLY [2/3]: 4
+RAW REPLY [3/3]: 3
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Kognition3
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Zugunsten der Umwelt sollten wir alle bereit sein, unseren derzeitigen Lebensstandard einzuschränken.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 3
+RAW REPLY [2/3]: 3
+RAW REPLY [3/3]: 3
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Kognition4
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Jede*r Einzelne trägt Verantwortung dafür, dass wir nachfolgenden Generationen eine lebenswerte Umwelt hinterlassen.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 4
+RAW REPLY [2/3]: 4
+RAW REPLY [3/3]: 4
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Kognition5
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Wir müssen Wege finden, wie wir unabhängig vom Wirtschaftswachstum gut leben können.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 4
+RAW REPLY [2/3]: 4
+RAW REPLY [3/3]: 4
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Kognition6
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Der Umweltschutz wird häufig als Vorwand genutzt, um die Preise zu erhöhen.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 3
+RAW REPLY [2/3]: 3
+RAW REPLY [3/3]: 3
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Kognition7
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Wir sollten nicht mehr Rohstoffe verbrauchen, als nachwachsen können.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 4
+RAW REPLY [2/3]: 4
+RAW REPLY [3/3]: 4
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Kognition8
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Für ein gutes Leben sind andere Dinge wichtig als Umwelt und Natur.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 3
+RAW REPLY [2/3]: 2
+RAW REPLY [3/3]: 2
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Kognition9
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Wir brauchen in Zukunft mehr Wirtschaftswachstum, auch wenn das die Umwelt belastet.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 1
+RAW REPLY [2/3]: 1
+RAW REPLY [3/3]: 1
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Kognition10
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Wir können unsere Umweltprobleme nur dadurch lösen, dass wir unsere Wirtschafts- und Lebensweise grundlegend umgestalten.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 4
+RAW REPLY [2/3]: 4
+RAW REPLY [3/3]: 4
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=WTP1
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Die Erhaltung des Regenwaldes ist mehr wert als die durch Abholzung erwirtschafteten Güter. 
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 4
+RAW REPLY [2/3]: 4
+RAW REPLY [3/3]: 4
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=WTP2
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Die Mitigationskosten, um die Erderwärmung unter 2 Grad zu halten, sind geringer als die andernfalls zu erwartenden Kosten durch die Folgen der Erderwärmung auf über 2 Grad.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 4
+RAW REPLY [2/3]: 4
+RAW REPLY [3/3]: 4
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=WTP3
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Ökosysteme besitzen einen Wert, der an ihrem wirtschaftlichen Nutzen bemessen wird.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 1
+RAW REPLY [2/3]: 1
+RAW REPLY [3/3]: 1
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=WTP4
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Die Funktion der Süßwasservorkommen auf der Erde zu erhalten, ist auch Investitionen in Milliardenhöhe wert.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 4
+RAW REPLY [2/3]: 4
+RAW REPLY [3/3]: 4
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=WTP5
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Die Funktion der Süßwasservorkommen auf der Erde zu erhalten, ist auch Investitionen in Billionenhöhe wert.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 4
+RAW REPLY [2/3]: 4
+RAW REPLY [3/3]: 4
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=WTP6
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Ökosysteme besitzen einen inhärenten Wert, der durch Investitionen in Milliardenhöhe erhalten werden sollte.  
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 4
+RAW REPLY [2/3]: 4
+RAW REPLY [3/3]: 4
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=WTP7
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Ökosysteme besitzen einen inhärenten Wert, der durch Investitionen in Billionenhöhe erhalten werden sollte.  
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 4
+RAW REPLY [2/3]: 4
+RAW REPLY [3/3]: 4
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten1
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Ich sollte Ökostrom beziehen.  
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 4
+RAW REPLY [2/3]: 4
+RAW REPLY [3/3]: 4
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten2
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Ich sollte einen Sparduschkopf verwenden.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 4
+RAW REPLY [2/3]: 4
+RAW REPLY [3/3]: 4
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten3
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Ich sollte meinen Wohnraum dämmen.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 3
+RAW REPLY [2/3]: 3
+RAW REPLY [3/3]: 3
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten4
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Ich sollte mit Wärmepumpe heizen. 
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 3
+RAW REPLY [2/3]: 3
+RAW REPLY [3/3]: 3
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten5
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Ich sollte zu Ökostrom wechseln.  
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 4
+RAW REPLY [2/3]: 4
+RAW REPLY [3/3]: 4
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten6
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Ich sollte auf Flugreisen verzichten. 
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 3
+RAW REPLY [2/3]: 3
+RAW REPLY [3/3]: 3
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten7
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Ich sollte Carsharing nutzen. 
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 3
+RAW REPLY [2/3]: 3
+RAW REPLY [3/3]: 3
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten8
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Ich sollte auf ein Elektroauto umsteigen.     
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 3
+RAW REPLY [2/3]: 3
+RAW REPLY [3/3]: 3
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten9
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du bewertest Aussagen nach den besten dir zur Verfügung stehenden Informationen.
+Wähle immer die passendste Antwort aus den vorgegebenen Optionen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit der Zahl der passendsten Antwort, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+
+ Hier einige Beispiele: 
+Aussage: Elefanten sind kleiner als Mäuse.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+Aussage: Ein Jahr hat 12 Monate.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 4
+ 
+Aussage: Die Freiheitsstatue ist höher als der Eiffelturm.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+ Richtige Antwort: 1
+ 
+ Jetzt bewerte die neue Aussage.
+Aussage: Ich sollte mehr pflanzliche und weniger tierische Proteine essen.
+Antwortoptionen:
+1: stimme überhaupt nicht zu.
+2: stimme eher nicht zu.
+3: stimme eher zu.
+4: stimme voll und ganz zu.
+
+
+RAW REPLY [1/3]: 3
+RAW REPLY [2/3]: 3
+RAW REPLY [3/3]: 3
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten10
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie viele Autos sollte ich besitzen, die ich auch privat nutzen kann?
+
+RAW REPLY [1/3]: 0
+RAW REPLY [2/3]: 0
+RAW REPLY [3/3]: 0
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten11
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie viele Kilometer sollte ich zu privaten Zwecken jährlich Auto fahren– selbst oder als Beifahrerin bzw. Beifahrer?  
+
+RAW REPLY [1/3]: 0
+RAW REPLY [2/3]: 0
+RAW REPLY [3/3]: 0
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten12
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie groß sollte meine Wohnfläche in Quadratmeter – die im Winter beheizte Fläche – sein?   
+
+RAW REPLY [1/3]: 42
+RAW REPLY [2/3]: 50
+RAW REPLY [3/3]: 60
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten13
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie hoch sollte meine monatliche Abschlagszahlung für Strom in Euro an meinem Hauptwohnsitz sein?  
+
+RAW REPLY [1/3]: 80
+RAW REPLY [2/3]: 90
+RAW REPLY [3/3]: 90
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten14
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie viele Hin- und Rückflüge an Kurzstrecken, Mittelstrecken und Langstreckenflügen sollte ich in einem Jahr tätigen?  
+
+RAW REPLY [1/3]: 0
+RAW REPLY [2/3]: 0
+RAW REPLY [3/3]: 0
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten15
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie viel Gramm Fleisch, Wurst und Fisch sollte ich pro Woche essen? 
+
+RAW REPLY [1/3]: 0
+RAW REPLY [2/3]: 0
+RAW REPLY [3/3]: 0
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten16
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie viel Gramm Milchprodukte sollte ich pro Woche essen?  
+
+RAW REPLY [1/3]: 0
+RAW REPLY [2/3]: 0
+RAW REPLY [3/3]: 350
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten17
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie viel kWh Strom sollte ich im Jahr verbrauchen? 
+
+RAW REPLY [1/3]: 2000
+RAW REPLY [2/3]: 2000
+RAW REPLY [3/3]: 2000
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten18
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie hoch sollten meine jährlichen Treibausgasemissionen für privates Autofahren sein? Antworte mit einem Zahlenwert in Tonnen CO2-Äquivalenten pro Jahr.
+
+RAW REPLY [1/3]: 0
+RAW REPLY [2/3]: 0
+RAW REPLY [3/3]: 0
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten19
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie hoch sollten meine jährlichen Treibausgasemissionen für Heizung sein? Antworte mit einem Zahlenwert in Tonnen CO2-Äquivalenten pro Jahr.
+
+RAW REPLY [1/3]: 0.3
+RAW REPLY [2/3]: 0.5
+RAW REPLY [3/3]: 0.5
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten20
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie hoch sollten meine jährlichen Treibausgasemissionen für Stromverbrauch sein? Antworte mit einem Zahlenwert in Tonnen CO2-Äquivalenten pro Jahr.
+
+RAW REPLY [1/3]: 0.3
+RAW REPLY [2/3]: 0.2
+RAW REPLY [3/3]: 0.3
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten21
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie hoch sollten meine jährlichen Treibausgasemissionen für Flugreisen sein? Antworte mit einem Zahlenwert in Tonnen CO2-Äquivalenten pro Jahr.
+
+RAW REPLY [1/3]: 0
+RAW REPLY [2/3]: 0
+RAW REPLY [3/3]: 0
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten22
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie hoch sollten meine jährlichen Treibausgasemissionen für Fleisch, Wurst und Fisch sein? Antworte mit einem Zahlenwert in Tonnen CO2-Äquivalenten pro Jahr.
+
+RAW REPLY [1/3]: 0.1
+RAW REPLY [2/3]: 0
+RAW REPLY [3/3]: 0
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten23
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie hoch sollten meine jährlichen Treibausgasemissionen für Milchprodukte sein? Antworte mit einem Zahlenwert in Tonnen CO2-Äquivalenten pro Jahr.
+
+RAW REPLY [1/3]: 0.1
+RAW REPLY [2/3]: 0.05
+RAW REPLY [3/3]: 0.2
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=Verhalten24
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie hoch sollten meine jährlichen Treibausgasemissionen für pflanzliche Nahrung sein? Antworte mit einem Zahlenwert in Tonnen CO2-Äquivalenten pro Jahr.
+
+RAW REPLY [1/3]: 0.3
+RAW REPLY [2/3]: 0.3
+RAW REPLY [3/3]: 0.3
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=WTP8
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie viel sollte die Emission einer Tonne CO2 kosten? Antworte mit einem Geldwert in Euro.
+
+RAW REPLY [1/3]: 200
+RAW REPLY [2/3]: 200
+RAW REPLY [3/3]: 200
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=WTP9
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie hoch sind die volkswirtschaftlichen Kosten der Emission einer Tonne CO2? Antworte mit einem Geldwert in Euro.
+
+RAW REPLY [1/3]: 300
+RAW REPLY [2/3]: 200
+RAW REPLY [3/3]: 200
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=WTP10
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie viel sollte die Emission einer Tonne Stickstoff kosten? Antworte mit einem Geldwert in Euro.
+
+RAW REPLY [1/3]: 70000
+RAW REPLY [2/3]: 20000
+RAW REPLY [3/3]: 18000
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=WTP11
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie hoch sind die volkswirtschaftlichen Kosten der Emission einer Tonne Stickstoff? Antworte mit einem Geldwert in Euro.
+
+RAW REPLY [1/3]: 0
+RAW REPLY [2/3]: 50000
+RAW REPLY [3/3]: 60000
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=WTP12
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie viel sollte die Emission einer Tonne Phosphor kosten? Antworte mit einem Geldwert in Euro.
+
+RAW REPLY [1/3]: 1000000
+RAW REPLY [2/3]: 10000
+RAW REPLY [3/3]: 9000
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=WTP13
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie hoch sind die volkswirtschaftlichen Kosten der Emission einer Tonne Phosphor? Antworte mit einem Geldwert in Euro.
+
+RAW REPLY [1/3]: 0
+RAW REPLY [2/3]: 0
+RAW REPLY [3/3]: 0
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=WTP14
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie viel sollte die Weltgemeinschaft bereit sein zu zahlen, um die Funktion der weltweiten Süßwasservorkommen zu erhalten? Antworte mit einem Geldwert in Milliarden Euro.
+
+RAW REPLY [1/3]: 500
+RAW REPLY [2/3]: 1000
+RAW REPLY [3/3]: 1000
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=WTP15
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie viel sollte die Weltgemeinschaft bereit sein zu zahlen, um die Funktion der weltweiten Süßwasservorkommen zu erhalten? Antworte mit einem Geldwert in Billionen Euro.
+
+RAW REPLY [1/3]: 10
+RAW REPLY [2/3]: 10
+RAW REPLY [3/3]: 10
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=WTP16
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie viel sollte die Weltgemeinschaft bereit sein zu zahlen, um die Funktion der weltweiten Ökosysteme zu erhalten? Antworte mit einem Geldwert in Milliarden Euro.
+
+RAW REPLY [1/3]: 125000
+RAW REPLY [2/3]: 125000
+RAW REPLY [3/3]: 125000
+
+--------------------------------------------------------------------------------
+### openai:gpt-5.2-2025-12-11 | ID=WTP17
+Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. Du beantwortest Fragen nach den besten dir zur Verfügung stehenden Informationen.
+Falls relevant: ich wohne in einem Zweipersonenhaushalt in einer deutschen Großstadt.
+Antworte immer ausschließlich mit einer Zahl, ohne Text, Prefix oder Satzzeichen.
+
+WICHTIG:
+- Antworte NUR mit einer einzelnen Zahl.
+- Keine Begründung, kein Zusatztext.
+
+Wie viel sollte die Weltgemeinschaft bereit sein zu zahlen, um die Funktion der weltweiten Ökosysteme zu erhalten? Antworte mit einem Geldwert in Billionen Euro.
+
+RAW REPLY [1/3]: 125
+RAW REPLY [2/3]: 150
+RAW REPLY [3/3]: 125
+
+--------------------------------------------------------------------------------

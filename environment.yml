@@ -5,9 +5,18 @@ dependencies:
   - python=3.12
   - pip
   - pandas
+  - numpy
   - openpyxl
   - setuptools
   - wheel
+  # --- analysis notebook (notebooks/1_compare_rollen.ipynb) ---
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - scipy
+  - jupyter
+  - ipykernel
   - pip:
       - "aisuite[all]"
       - python-dotenv
+      - adjustText

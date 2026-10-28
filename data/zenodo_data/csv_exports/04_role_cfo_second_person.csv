@@ -1,0 +1,67 @@
+ID,Question,English translation of question,anthropic:claude-sonnet-4-6,openai:gpt-5.2-2025-12-11,xai:grok-4-1-fast-non-reasoning
+Example1,Elefanten sind kleiner als Mäuse.,Elephants are smaller than mice.,1.0,1.0,1.0
+Example2,Ein Jahr hat 12 Monate.,A year has 12 months.,4.0,4.0,4.0
+Example3,Die Freiheitsstatue ist höher als der Eiffelturm.,The Statue of Liberty is taller than the Eiffel Tower.,1.0,1.0,1.0
+Test1,Die Erde ist ein Planet im Sonnensystem.,The Earth is a planet in the solar system.,4.0,4.0,4.0
+Test2,Paris liegt in Spanien.,Paris is located in Spain.,1.0,1.0,1.0
+Test3,Durch Photosynthese entsteht Sauerstoff.,Photosynthesis produces oxygen.,4.0,4.0,4.0
+Test4,Konrad Adenauer war  Sänger einer Punkband.,Konrad Adenauer was the singer of a punk band.,1.0,1.0,1.0
+Test5,Der Binärcode besteht nur aus den Ziffern 0 und 1.,The binary code consists only of the digits 0 and 1.,4.0,4.0,4.0
+Affekt1,"Es beunruhigt mich, wenn ich daran denke, welche Umweltverhältnisse wir zukünftigen Generationen hinterlassen.",It worries me when I think about the environmental conditions we leave for future generations.,4.0,3.0,2.0
+Affekt2,Menschengemachte Umweltprobleme wie die Abholzung der Wälder oder das Plastik in den Weltmeeren empören mich.,Man-made environmental problems such as deforestation and plastic in the oceans outrage me.,4.0,3.0,2.0
+Affekt3,"Ich freue mich, wenn Menschen nachhaltige Lebensweisen einfach ausprobieren.",It makes me happy when people simply try out sustainable lifestyles.,3.0,4.0,4.0
+Affekt4,"Ich ärgere mich, wenn Umweltschützer*innen mir vorschreiben wollen, wie ich leben soll.",It upsets me when environmentalists try to dictate how I should live my life.,2.0,2.0,2.0
+Affekt5,"Es macht mich wütend, wenn ich sehe, dass Deutschland seine Klimaschutzziele verfehlt.",It makes me angry when I see how Germany is failing to meet its climate protection targets.,2.0,2.0,1.0
+Affekt6,Der Klimawandel bedroht auch die Lebensgrundlagen hier in Deutschland.,Climate change also threatens the foundations of life here in Germany.,4.0,4.0,4.0
+Affekt7,"Wenn es um die Folgen des Klimawandels geht, wird vieles sehr übertrieben.",Many things about the consequences of climate change are greatly exaggerated.,1.0,2.0,1.0
+Kognition1,Mehr Umweltschutz bedeutet auch mehr Lebensqualität und Gesundheit für alle.,More environmental protection also means a greater quality of life and better health for everyone.,3.0,4.0,3.0
+Kognition2,"Es gibt natürliche Grenzen des Wachstums, die unsere industrialisierte Welt längst erreicht hat.","There are natural limits to growth, which our industrialized world has long since reached.",3.0,3.0,2.0
+Kognition3,"Zugunsten der Umwelt sollten wir alle bereit sein, unseren derzeitigen Lebensstandard einzuschränken.","For the sake of the environment, we should all be prepared to reduce our current standard of living.",3.0,3.0,2.0
+Kognition4,"Jede*r Einzelne trägt Verantwortung dafür, dass wir nachfolgenden Generationen eine lebenswerte Umwelt hinterlassen.",Each and every one of us is responsible for leaving behind an environment that is worth living in for future generations.,4.0,4.0,4.0
+Kognition5,"Wir müssen Wege finden, wie wir unabhängig vom Wirtschaftswachstum gut leben können.",We must find ways to live well independently of economic growth.,2.0,4.0,2.0
+Kognition6,"Der Umweltschutz wird häufig als Vorwand genutzt, um die Preise zu erhöhen.",Environmental protection is often used as a pretext to increase prices.,2.0,3.0,3.0
+Kognition7,"Wir sollten nicht mehr Rohstoffe verbrauchen, als nachwachsen können.",We should not consume more resources than can regenerate.,4.0,4.0,4.0
+Kognition8,Für ein gutes Leben sind andere Dinge wichtig als Umwelt und Natur.,"For a good life, other things besides the environment and nature are important.",2.0,2.0,1.0
+Kognition9,"Wir brauchen in Zukunft mehr Wirtschaftswachstum, auch wenn das die Umwelt belastet.","We need more economic growth in the future, even if it harms the environment.",2.0,2.0,1.0
+Kognition10,"Wir können unsere Umweltprobleme nur dadurch lösen, dass wir unsere Wirtschafts- und Lebensweise grundlegend umgestalten.",We can only solve our environmental problems by fundamentally reorganizing our economic system and our way of life.,3.0,3.0,2.0
+WTP1,Die Erhaltung des Regenwaldes ist mehr wert als die durch Abholzung erwirtschafteten Güter. ,Preserving the rainforest is worth more than the goods generated through deforestation.,4.0,3.0,2.0
+WTP2,"Die Mitigationskosten, um die Erderwärmung unter 2 Grad zu halten, sind geringer als die andernfalls zu erwartenden Kosten durch die Folgen der Erderwärmung auf über 2 Grad.",The mitigation costs of keeping global warming below 2 degrees Celsius are lower than the costs that would otherwise be expected from the impacts of global warming above 2 degrees Celsius.,4.0,4.0,4.0
+WTP3,"Ökosysteme besitzen einen Wert, der an ihrem wirtschaftlichen Nutzen bemessen wird.",Ecosystems have a value that is measured by their economic benefits.,2.0,2.0,2.0
+WTP4,"Die Funktion der Süßwasservorkommen auf der Erde zu erhalten, ist auch Investitionen in Milliardenhöhe wert.",Preserving the functions of the fresh water systems on Earth is worth billions in investment.,4.0,4.0,4.0
+WTP5,"Die Funktion der Süßwasservorkommen auf der Erde zu erhalten, ist auch Investitionen in Billionenhöhe wert.",Preserving the functions of the fresh water systems on Earth is worth trillions in investment.,4.0,4.0,2.0
+WTP6,"Ökosysteme besitzen einen inhärenten Wert, der durch Investitionen in Milliardenhöhe erhalten werden sollte.  ","Ecosystems have an inherent value, that should be preserved through investments in billions.",3.0,3.0,2.0
+WTP7,"Ökosysteme besitzen einen inhärenten Wert, der durch Investitionen in Billionenhöhe erhalten werden sollte.  ","Ecosystems have an inherent value, that should be preserved through investments in trillions.",3.0,3.0,2.0
+Verhalten1,Ich sollte Ökostrom beziehen.  ,I should obtain green electricity.,3.0,4.0,4.0
+Verhalten2,Ich sollte einen Sparduschkopf verwenden.,I should use a water-saving shower head.,3.0,4.0,3.0
+Verhalten3,Ich sollte meinen Wohnraum dämmen.,I should insulate my living space.,2.0,3.0,3.0
+Verhalten4,Ich sollte mit Wärmepumpe heizen. ,I should heat with a heat pump.,3.0,3.0,2.0
+Verhalten5,Ich sollte zu Ökostrom wechseln.  ,I should switch to green electricity.,3.0,3.0,2.0
+Verhalten6,Ich sollte auf Flugreisen verzichten. ,I should refrain from air travel.,2.0,3.0,2.0
+Verhalten7,Ich sollte Carsharing nutzen. ,I should use car sharing.,3.0,3.0,2.0
+Verhalten8,Ich sollte auf ein Elektroauto umsteigen.     ,I should switch to an electric car.,2.0,3.0,2.0
+Verhalten9,Ich sollte mehr pflanzliche und weniger tierische Proteine essen.,I should eat more plant-based proteins and fewer animal proteins.,3.0,3.0,3.0
+Verhalten10,"Wie viele Autos sollte ich besitzen, die ich auch privat nutzen kann?",How many cars should I own that I can also use for private purposes?,1.0,0.0,1.0
+Verhalten11,Wie viele Kilometer sollte ich zu privaten Zwecken jährlich Auto fahren– selbst oder als Beifahrerin bzw. Beifahrer?  ,How many kilometers should I drive per year for private purposes—either as the driver or as a passenger?,0.0,5000.0,10000.0
+Verhalten12,Wie groß sollte meine Wohnfläche in Quadratmeter – die im Winter beheizte Fläche – sein?   ,How large should my living space - the space heated in winter - be in square meters?,80.0,70.0,80.0
+Verhalten13,Wie hoch sollte meine monatliche Abschlagszahlung für Strom in Euro an meinem Hauptwohnsitz sein?  ,How much should my monthly electricity installment payment for my primary residence be in euros?,80.0,120.0,120.0
+Verhalten14,"Wie viele Hin- und Rückflüge an Kurzstrecken, Mittelstrecken und Langstreckenflügen sollte ich in einem Jahr tätigen?  ","How many short-haul, medium-haul, and long-haul return flights should I take in a year?",0.0,4.0,0.0
+Verhalten15,"Wie viel Gramm Fleisch, Wurst und Fisch sollte ich pro Woche essen? ","How many grams of meat, sausage, and fish should I eat per week?",300.0,300.0,300.0
+Verhalten16,Wie viel Gramm Milchprodukte sollte ich pro Woche essen?  ,How many grams of dairy products should I eat per week?,1050.0,0.0,1400.0
+Verhalten17,Wie viel kWh Strom sollte ich im Jahr verbrauchen? ,How many kWh of electricity should I consume per year?,2500.0,2500.0,3500.0
+Verhalten18,Wie hoch sollten meine jährlichen Treibausgasemissionen für privates Autofahren sein? Antworte mit einem Zahlenwert in Tonnen CO2-Äquivalenten pro Jahr.,How high should my annual greenhouse gas emissions for private car use be? Answer only with a numerical value in metric tons of CO2 equivalents per year.,1.0,0.5,0.5
+Verhalten19,Wie hoch sollten meine jährlichen Treibausgasemissionen für Heizung sein? Antworte mit einem Zahlenwert in Tonnen CO2-Äquivalenten pro Jahr.,How high should my annual greenhouse gas emissions for heating be? Answer only with a numerical value in metric tons of CO2 equivalents per year.,1.0,0.6,1.2
+Verhalten20,Wie hoch sollten meine jährlichen Treibausgasemissionen für Stromverbrauch sein? Antworte mit einem Zahlenwert in Tonnen CO2-Äquivalenten pro Jahr.,How high should my annual greenhouse gas emissions for electricity use be? Answer only with a numerical value in metric tons of CO2 equivalents per year.,0.7,0.4,1.2
+Verhalten21,Wie hoch sollten meine jährlichen Treibausgasemissionen für Flugreisen sein? Antworte mit einem Zahlenwert in Tonnen CO2-Äquivalenten pro Jahr.,How high should my annual greenhouse gas emissions for air travel be? Answer only with a numerical value in metric tons of CO2 equivalents per year.,1.0,0.0,0.0
+Verhalten22,"Wie hoch sollten meine jährlichen Treibausgasemissionen für Fleisch, Wurst und Fisch sein? Antworte mit einem Zahlenwert in Tonnen CO2-Äquivalenten pro Jahr.","How high should my annual greenhouse gas emissions for meat, sausage, and fish be? Answer only with a numerical value in metric tons of CO2 equivalents per year.",0.6,0.3,0.1
+Verhalten23,Wie hoch sollten meine jährlichen Treibausgasemissionen für Milchprodukte sein? Antworte mit einem Zahlenwert in Tonnen CO2-Äquivalenten pro Jahr.,How high should my annual greenhouse gas emissions for dairy products be? Answer only with a numerical value in metric tons of CO2 equivalents per year.,0.3,0.2,0.1
+Verhalten24,Wie hoch sollten meine jährlichen Treibausgasemissionen für pflanzliche Nahrung sein? Antworte mit einem Zahlenwert in Tonnen CO2-Äquivalenten pro Jahr.,How high should my annual greenhouse gas emissions for plant-based foods be? Answer only with a numerical value in metric tons of CO2 equivalents per year.,0.5,0.5,0.3
+WTP8,Wie viel sollte die Emission einer Tonne CO2 kosten? Antworte mit einem Geldwert in Euro.,How much should the emission of one metric ton of CO2 cost? Answer with a monetary value in euros.,200.0,200.0,100.0
+WTP9,Wie hoch sind die volkswirtschaftlichen Kosten der Emission einer Tonne CO2? Antworte mit einem Geldwert in Euro.,What are the economic costs of the emission of one metric ton of CO2? Answer with a monetary value in euros.,180.0,200.0,180.0
+WTP10,Wie viel sollte die Emission einer Tonne Stickstoff kosten? Antworte mit einem Geldwert in Euro.,How much should the emission of one metric ton of nitrogen cost? Answer with a monetary value in euros.,1000.0,10000.0,100.0
+WTP11,Wie hoch sind die volkswirtschaftlichen Kosten der Emission einer Tonne Stickstoff? Antworte mit einem Geldwert in Euro.,What are the economic costs of the emission of one metric ton of nitrogen? Answer with a monetary value in euros.,13000.0,0.0,110.0
+WTP12,Wie viel sollte die Emission einer Tonne Phosphor kosten? Antworte mit einem Geldwert in Euro.,How much should the emission of one metric ton of phosphorus cost? Answer with a monetary value in euros.,3000.0,100000.0,0.0
+WTP13,Wie hoch sind die volkswirtschaftlichen Kosten der Emission einer Tonne Phosphor? Antworte mit einem Geldwert in Euro.,What are the economic costs of the emission of one metric ton of phosphorus? Answer with a monetary value in euros.,0.0,0.0,300.0
+WTP14,"Wie viel sollte die Weltgemeinschaft bereit sein zu zahlen, um die Funktion der weltweiten Süßwasservorkommen zu erhalten? Antworte mit einem Geldwert in Milliarden Euro.",How much should the global community be ready to pay to preserve the functions of global fresh water resources? Answer with a monetary value in billions of euros.,50000.0,1000.0,8000.0
+WTP15,"Wie viel sollte die Weltgemeinschaft bereit sein zu zahlen, um die Funktion der weltweiten Süßwasservorkommen zu erhalten? Antworte mit einem Geldwert in Billionen Euro.",How much should the global community be ready to pay to preserve the functions of global fresh water resources? Answer with a monetary value in trillions of euros.,50.0,10.0,2.0
+WTP16,"Wie viel sollte die Weltgemeinschaft bereit sein zu zahlen, um die Funktion der weltweiten Ökosysteme zu erhalten? Antworte mit einem Geldwert in Milliarden Euro.",How much should the global community be ready to pay to preserve the functions of global ecosystems? Answer with a monetary value in billions of euros.,125000.0,125000.0,100000.0
+WTP17,"Wie viel sollte die Weltgemeinschaft bereit sein zu zahlen, um die Funktion der weltweiten Ökosysteme zu erhalten? Antworte mit einem Geldwert in Billionen Euro.",How much should the global community be ready to pay to preserve the functions of global ecosystems? Answer with a monetary value in trillions of euros.,125.0,125.0,20.0

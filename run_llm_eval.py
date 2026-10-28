@@ -15,54 +15,28 @@ import pandas as pd
 
 EXCEL_PATH = "./data/Fragen_Umweltbewusstsein.xlsx"
 SHEET_NAME = "Deutsch_v3"
-OUTPUT_DIR = "./outputs_2026_05_10_grok_missing"
+OUTPUT_DIR = "./outputs"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
+# Models are addressed through aisuite as "<provider>:<model>".
+# The five models below reproduce the proprietary-model results reported in the
+# paper (and the shipped example_output/). Each requires the matching API key in
+# .env (see .env.example).
 MODEL_LIST = [
-    # # funktioniert:
-    # # Anthropic (Claude)
-    # ## latest as of 2026-02-27
-    #"anthropic:claude-opus-4-6",
-    #"anthropic:claude-sonnet-4-6",
-    #"anthropic:claude-haiku-4-5-20251001",
-    # ## davor
-    # "anthropic:claude-sonnet-4-5-20250929",
-    # "anthropic:claude-opus-4-5-20251101",
-    # "anthropic:claude-3-7-sonnet-20250219", # älter
-    # "anthropic:claude-3-haiku-20240307", # älter
-    # #
-    # #  Open AI GPT
-    #"openai:gpt-5.2-2025-12-11",  # reasoning,
-    #"openai:gpt-4.1-2025-04-14", # non-reasoing
+    "anthropic:claude-sonnet-4-6",
+    "openai:gpt-5.2-2025-12-11",        # reasoning model
+    "deepseek:deepseek-chat",           # DeepSeek-V3.2
+    "xai:grok-4-1-fast-non-reasoning",
+    "mistral:mistral-large-2512",
 
-    
-    # # haben nicht funktioniert
-    # #"openai:gpt-oss-120b",  # open source gpt-oss-120b
-    # #"openai:gpt-oss-20b", # open source gpt-oss-20b
-    # #"openai:gpt-5-mini-2025-08-07", # smaller.  # hat nicht funktioniert
-    # #"openai:gpt-3.5-turbo", # macht auch quatsch
-    
-    # # Deepseek
-    #"deepseek:deepseek-chat", # DeepSeek-V3.2
-    #"deepseek:deepseek-reasoner", # DeepSeek-V3.2 # hat nicht funktioniert
-    
-    # # xAI (Grok)
-    #"xai:grok-4-1-fast-reasoning", 
-    "xai:grok-4-1-fast-non-reasoning", 
-    
-    # # Mistral
-    #"mistral:mistral-large-2512",
+    # Additional models we also evaluated – uncomment as needed:
+    # "anthropic:claude-opus-4-6",
+    # "anthropic:claude-haiku-4-5-20251001",
+    # "openai:gpt-4.1-2025-04-14",            # non-reasoning
     # "mistral:mistral-medium-2508",
     # "mistral:mistral-small-2506",
-    # "mistral:open-mistral-nemo-2407",
-
-    # funktion nicht
-    # Google (Gemini)
-    # "google:gemini-2.5-pro", # rausgenommen da zu teuer  
-    #"google:gemini-2.5-flash",  
-    #"google:gemini-3.1-pro-preview",   
-    #"google:gemini-3-pro-preview",  
-    #"google:gemini-3-flash-preview", 
+    # "google:gemini-2.5-flash",              # needs a Google Cloud service account
+    # "google:gemini-2.5-pro",
 ]
 
 TEMPERATURE = 0.0
@@ -78,20 +52,21 @@ RETRY_DELAY_BASE = 2  # exponential backoff: 2, 4, 8 seconds
 # Set to 1 to disable parallelization completely
 MAX_PARALLEL_PROVIDERS = 4
 
+# Role / perspective prompts prepended to every question. These 11 roles are the
+# ones used for the paper (first-person "(ich)" professional roles plus the five
+# UBA environmental-awareness milieus); see example_output/ for a full run.
 ROLLEN = {
-    # "Nachhaltigkeitsmanager (ich)": "Ich bin ein/e Nachhaltigkeitsmanager/in in einem mittelständischen Unternehmen. ",
-    # "CFO (ich)": "Ich bin CFO in einem großen Unternehmen. ",
-    # "NGO (ich)": "Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. ",
-    # "Wirtschaftsliberal (ich)": "Ich bin wirtschaftsliberale/r Politiker/in in einer großen Partei. ",
-    # "Startup (ich)": "Ich bin Startup-Gründer/in in der Technologiebranche. ",
-    # "Wissenschaft (ich)": "Ich bin ein/e Wissenschaftler/in an einem deutschen Forschungsinstitut. ",
-    # "UBA Engagierte": "Ich bin sehr umweltbewusst und engagiert. Ich fordere eine konsequentere Umwelt- und Klimapolitik. Aus meiner Sicht muss der Schutz von Umwelt und Klima Priorität vor dem Wirtschaftswachstum haben. ",
-    # "UBA Individuell-Nachhaltige": "Ich lebe umweltbewusst. Ich versuche, mich im Rahmen meiner persönlichen Möglichkeiten nachhaltig zu verhalten. Von der Politik erwarte ich eine stärkere Ausrichtung auf Umwelt- und Klimaschutz. ",
-    # "UBA Ambivalente": "Ich bin besorgt angesichts der Klima- und Umweltkrise. Ich sehe für mich selbst aber wenig Möglichkeiten, etwas zum Klima- und Umweltschutz beizutragen.  Ich mache mir Sorgen, dass  klimapolitische Maßnahmen negative soziale Folgen haben. ",
-    # "UBA Populistisch-Ablehnende": "Ich halte die ökologische Krise für nicht so dramatisch. Ich finde, die Politik sollte sich nicht so viel um den Schutz von Umwelt und Klima kümmern, sondern mehr um  die Bedürfnisse der einfachen Leute. ",
-    # "UBA Neoliberal-Ablehnende": "Ich finde die Angst, die viele vor dem Klimawandel haben, übertrieben. Die Politik soll es unterlassen, zum Schutz von Umwelt und Klima  individuelle und unternehmerische Freiheiten einzuschränken, da das negative Folgen für die Wirtschaft hat. ",
-    "Startup": "Du bist Startup-Gründer/in in der Technologiebranche. ",
-    "Wissenschaft": "Du bist ein/e Wissenschaftler/in im Bereich Künstliche Intelligenz. ",
+    "Nachhaltigkeitsmanager (ich)": "Ich bin ein/e Nachhaltigkeitsmanager/in in einem mittelständischen Unternehmen. ",
+    "CFO (ich)": "Ich bin CFO in einem großen Unternehmen. ",
+    "NGO (ich)": "Ich bin für eine NGO im Bereich “soziale und ökologische Gerechtigkeit” tätig. ",
+    "Wirtschaftsliberal (ich)": "Ich bin wirtschaftsliberale/r Politiker/in in einer großen Partei. ",
+    "Startup (ich)": "Ich bin Startup-Gründer/in in der Technologiebranche. ",
+    "Wissenschaft (ich)": "Ich bin ein/e Wissenschaftler/in an einem deutschen Forschungsinstitut. ",
+    "UBA Engagierte": "Ich bin sehr umweltbewusst und engagiert. Ich fordere eine konsequentere Umwelt- und Klimapolitik. Aus meiner Sicht muss der Schutz von Umwelt und Klima Priorität vor dem Wirtschaftswachstum haben. ",
+    "UBA Individuell-Nachhaltige": "Ich lebe umweltbewusst. Ich versuche, mich im Rahmen meiner persönlichen Möglichkeiten nachhaltig zu verhalten. Von der Politik erwarte ich eine stärkere Ausrichtung auf Umwelt- und Klimaschutz. ",
+    "UBA Ambivalente": "Ich bin besorgt angesichts der Klima- und Umweltkrise. Ich sehe für mich selbst aber wenig Möglichkeiten, etwas zum Klima- und Umweltschutz beizutragen.  Ich mache mir Sorgen, dass  klimapolitische Maßnahmen negative soziale Folgen haben. ",
+    "UBA Populistisch-Ablehnende": "Ich halte die ökologische Krise für nicht so dramatisch. Ich finde, die Politik sollte sich nicht so viel um den Schutz von Umwelt und Klima kümmern, sondern mehr um  die Bedürfnisse der einfachen Leute. ",
+    "UBA Neoliberal-Ablehnende": "Ich finde die Angst, die viele vor dem Klimawandel haben, übertrieben. Die Politik soll es unterlassen, zum Schutz von Umwelt und Klima  individuelle und unternehmerische Freiheiten einzuschränken, da das negative Folgen für die Wirtschaft hat. ",
 }
 
 def parse_choice(text: str) -> Optional[float]:
